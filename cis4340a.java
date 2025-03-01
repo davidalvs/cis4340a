@@ -3,7 +3,7 @@
  *  Execution:    java cis4340a
  *
  *  Prints 
- *    "Hello, World - from Alex Chavez - Spring 2024 - UCF.
+ *    "Hello, World - from David Alvarado - Spring 2024 - UCF.
  *  By tradition, this is everyone's first program.
  *
  * Revision History:
