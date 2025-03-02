@@ -1,13 +1,14 @@
 public class R09_LCK01_J {
-    private static final Object lock = new Object();
-    
+    private final Object lock1 = new Object();
+    private final Object lock2 = new Object();
+
     public void doSomething() {
-        synchronized (lock) {
-            System.out.println("Acquired lock.");
-            // Perform an operation
-            synchronized (lock) {
-                System.out.println("Acquired lock again (risk of deadlock).");
+        synchronized (lock1) {
+            System.out.println("Acquired lock1.");
+            synchronized (lock2) {
+                System.out.println("Acquired lock2.");
             }
         }
     }
 }
+
