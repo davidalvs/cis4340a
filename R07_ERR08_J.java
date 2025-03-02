@@ -4,7 +4,9 @@ public class R07_ERR08_J {
             System.out.println("Processing...");
             throw new Exception();
         } catch (Exception e) {
-            // This hides the error and does nothing
+            // Secure fix: Log the error instead of hiding it
+            System.err.println("Exception caught: " + e.getMessage());
         }
     }
 }
+
